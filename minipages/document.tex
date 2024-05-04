@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{float} % To get "H" operator
+
+\begin{document}
+	\section{Minipages}
+	\subsection{Floating environment}
+	\begin{figure}[h]
+		\centering
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\includegraphics[width=0.7\textwidth]{example-image-a}
+		\end{minipage}
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\includegraphics[width=0.7\textwidth]{example-image-b}
+		\end{minipage}
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\includegraphics[width=0.7\textwidth]{example-image-c}
+		\end{minipage}
+	\end{figure}
+	\subsection{Non-Float environment}
+	\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\includegraphics[width=0.7\textwidth]{example-image-a}
+		\end{minipage}
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\includegraphics[width=0.7\textwidth]{example-image-b}
+		\end{minipage}
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\includegraphics[width=0.7\textwidth]{example-image-c}
+		\end{minipage}
+	\end{figure}
+	\subsection{Top-align}
+	\begin{figure}[h]
+		\centering
+		\begin{minipage}[t]{0.3\textwidth}\vspace{0pt}
+			\centering
+			\includegraphics[width=0.7\textwidth]{example-image-a}
+		\end{minipage}
+		\begin{minipage}[t]{0.3\textwidth}\vspace{0pt}
+			\centering
+			\includegraphics[width=0.7\textwidth]{example-image-b}
+		\end{minipage}
+		\begin{minipage}[t]{0.3\textwidth}\vspace{0pt}
+			\centering
+			\includegraphics[width=0.9\textwidth]{example-image-c}
+		\end{minipage}
+	\end{figure}
+\end{document}
