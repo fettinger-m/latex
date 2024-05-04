@@ -1,0 +1,24 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\begin{document}
+	\section*{Change spacing in math-environement}
+	\begin{equation*}
+		\setlength{\jot}{10pt}
+		\begin{aligned}
+			&\left(1+\sum_{j=1}^{\infty}(-1)^j q^{\frac{j(3j-1)}{2}} (1+q^j)\right)
+			\sum_{n=0}^{\infty}p(n)q^n=1\\
+			%
+			\Leftrightarrow&\left(-1+\sum_{j=0}^{\infty}(-1)^j q^{\frac{j(3j-1)}{2}} (1+q^j)\right)
+			\sum_{n=0}^{\infty}p(n)q^n=1\\
+			%
+			\Leftrightarrow&\left(\sum_{j=0}^{\infty}(-1)^j q^{\frac{j(3j-1)}{2}} (1+q^j)\right)\left(\sum_{n=0}^{\infty}p(n)q^n=1\right)-1=\sum_{n=0}^{\infty}p(n)q^n\\
+			%
+			\Leftrightarrow&\left(\sum_{n=0}^{\infty}\sum_{j=0}^{n}(-1)^j q^{\frac{j(3j-1)}{2}}p(n-j)q^{n-j}\right)-1
+			=\sum_{n=0}^{\infty}p(n)q^n\\
+			%
+			\Leftrightarrow&\phantom{\Biggl(}\sum_{n=1}^{\infty}\sum_{j=0}^{n}(-1)^j q^{\frac{j(3j-1)}{2}}p(n-j)q^{n-j}
+			=\sum_{n=1}^{\infty}p(n)q^n
+		\end{aligned}
+	\end{equation*}
+\end{document}
