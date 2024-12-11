@@ -1,0 +1,260 @@
+%!LW recipe=latexmk (xelatex)
+% !TEX program = "latexmk (xelatex)"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\usepackage[english]{babel}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{STIX Two Text} % Main document font
+
+
+%% Choose one of the following (if not choosing the  
+%% default, viz., Computer Modern, font family):
+%\usepackage{lmodern}
+%%
+%\usepackage{mathpazo}
+%\usepackage[theoremfont]{newpxmath} \usepackage{newpxmath}
+%\usepackage{kpfonts}
+%%
+%\usepackage{mathptmx}
+%\usepackage{times,mtpro2}
+%\usepackage{stix}
+%\usepackage{txfonts}
+%\usepackage{newtxtext,newtxmath}
+%%
+%\usepackage{libertine} \usepackage[libertine]{newtxmath}
+\usepackage{libertine,libertinust1math} % added 2019/11/28
+%%
+%\usepackage{newpxtext} \usepackage[euler-digits]{eulervm}
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+% \usepackage{hyperref} % Required for adding links	and customizing them
+% \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+% \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{8pt}{8pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Maximilian \textsc{Fettinger}}\bigskip\par} % Your name
+
+\section{Name and Contact Information}
+
+\begin{tabular}{rl}
+\textsc{Place \& Date of Birth:} & Vöcklabruck, Austria  | 15 August 2001 \\
+\textsc{Address:} & Zwerggasse 5/10, 1020 Vienna, Austria \\
+\textsc{Mobile:} & +43 676 814280599\\
+\textsc{E-Mail:} & \href{mailto:max.fettinger@icloud.com}{max.fettinger@icloud.com}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{11cm}}
+\textsc{Jul - Aug 2024} & Summer Intern at \textsc{Lenzing AG} \\
+& \footnotesize{Worked at the \emph{Wood Yard}}\\ 
+\multicolumn{2}{c}{} \\
+
+\textsc{Sep 2020 - Jul 2021} & One-Year Volunteer (\emph{Einjährig-Freiwilliger}) Austrian Armed Forces \\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Summer 2018} & Summer Intern at \textsc{SML Maschinengesellschaft mbH}, Redlham \emph{}\\
+& \footnotesize{Worked in the IT department}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Summer 2017} & Summer Intern at \textsc{Unimet Metallverarbeitung}, Ungenach \emph{}\\
+& \footnotesize{Worked in production and assembly}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl}	
+2024 - 2022& Bachelor of Science in \textsc{Mathematics}, \textbf{University of Vienna}\\
+& Expected graduation in October 2024 \\
+& Thesis: Partitions, the Pentagonal Number Theorem and other Partition Identities\\ &\small Betreuer: Prof. Markus \textsc{Fulmek}\\
+&\\
+
+2024 - 2022& Bachelor of Science in \textsc{Mathematics}, \textbf{University of Innsbruck}\\
+& Changed  place of study to Vienna\\
+& \\
+&\\
+
+2024 - 2022& Bachelor of Science in \textsc{Mathematics}, \textbf{University of Innsbruck}\\
+& Changed  place of study to Vienna\\
+&\\
+&\\
+
+%------------------------------------------------
+
+% \textsc{July} 2011& Undergraduate Degree in \textsc{}\textsc{Business Studies} \\&110/110 \small\emph{Commerce Specialization}, \normalsize\textbf{The University of California}, Berkeley\\
+% & Heavily specialized in mundane paperwork | \small Advisor: Stefano \textsc{Bonini}\\
+% &\normalsize \textsc{Gpa}: 7.5/9.0 \hyperlink{grds_usc}{\hfill| \footnotesize Detailed List of Exams}\\
+% &\\
+
+%------------------------------------------------
+
+% \textsc{Fall} 2008 & Exchange Semester at \textbf{University of Southern California}, Los Angeles\\
+% & \textsc{Gpa}: 8.0/9.0 \hyperlink{grds_usc}{\hfill| \footnotesize Detailed List of Exams}\\
+% &\\
+
+%------------------------------------------------
+
+% \textsc{July} 2006& \textbf{Liceo Classico ``E. Duni''}, Matera | Final Grade: 100/100
+% \end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+\section{Scholarships}
+
+\begin{tabular}{rl}
+\textsc{Nov.} 2022 & Merit scholarship to recognise outstanding academic achievements\normalsize\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rl}
+\textsc{English:} & Fluent\\
+
+\textsc{German:} & Mothertongue\\
+
+\textsc{Spanish:} & Basic Knowledge\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills}
+
+\begin{tabular}{rl}
+Basic Knowledge: & C, Julia, Mathemathica, MS Office, Vue.js, JavaScript, SQL, Swift, Illustrator\\
+
+Intermediate Knowledge: & Python, SymPy, NumPy, Java, Photoshop\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Interests and Activities}
+
+Technology, Open-Source, Programming\\
+Paradoxes in Decision Making, Psychoanalysis, Behavioural Finance\\
+Football, Travelling, hello
+
+%----------------------------------------------------------------------------------------
+
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	GRADE TABLES
+%----------------------------------------------------------------------------------------
+
+% \par{\centering\Large \hypertarget{grds}{Master of Science in \textsc{Finance}}\par}\large{\centering Grades\par}\normalsize
+
+% \begin{center}
+% \begin{tabular}{lcc}
+% \multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
+% Corporate Finance (Valuation) & 25 & 6\\
+% Financial Statement Analysis & 28 & 6\\
+% Statistics & 27 & 6\\
+% Theory of Finance & 26 & 6\\
+% Quantitative Methods for Finance & 30 & 6\\
+% Econometrics & 24 & 6\\
+% Derivatives & 31 & 6\\
+% Management of Financial and Insurance Companies & 30 & 6\\
+% Business Law & 31 & 6\\
+% Investment Banking	& 28 & 6\\ \\		
+% Behavioral Models for Economics and Finance	 & 29 & 6\\
+% Numerical Methods for Finance & 29 & 6\\
+% Advanced Derivatives & 30 & 6\\
+% Fixed Income (Advanced Methods) & 30 & 6\\ \\
+% English Language & 30 &	4\\
+% French Language & 31 &	4\\	
+% Internship & & 8\\		
+% Final Thesis & & 20\\	
+% & Total & 120\\\cline{2-3}
+% &\textsc{Gpa}&\textbf{8.0}
+% \end{tabular}
+% \end{center}
+% \bigskip
+% \hrule
+% \bigskip
+
+% %------------------------------------------------
+
+% \bigskip
+
+% \par{\centering\Large \hypertarget{grds_usc}{Exchange Program at \textsc{usc}, Los Angeles}\par}\large{\centering Grades\par}\normalsize
+
+% \begin{center}
+% \begin{tabular}{lcc}
+% \multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade} & \textsc{Grade Points}\\ 
+% \hline
+% Corporate Financial Strategy & A & 4\\
+% Derivatives & A & 4\\
+% Money, Credit, and Banking & A & 4\\
+% Business Strategy & A- & 3.5\\
+% & &\\\cline{2-3}
+% & \textsc{Gpa} & \textbf{3.875}
+% \end{tabular}
+% \end{center}
+% %----------------------------------------------------------------------------------------
+
+\end{document}
